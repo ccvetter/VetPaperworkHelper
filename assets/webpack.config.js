@@ -33,9 +33,6 @@ module.exports = (env, options) => {
           use: [
             {
               loader: 'babel-loader'
-            },
-            {
-              loader: 'ts-loader'
             }
           ]
         },
@@ -48,9 +45,6 @@ module.exports = (env, options) => {
           ],
         }
       ]
-    },
-    resolve: {
-      extensions: [".ts", ".js"]
     },
     plugins: [
       new MiniCssExtractPlugin({ filename: '../css/app.css' }),
