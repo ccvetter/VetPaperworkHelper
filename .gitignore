@@ -36,4 +36,4 @@ npm-debug.log
 .vs
 .vscode
 
-/node_modules
+/node_modules/
