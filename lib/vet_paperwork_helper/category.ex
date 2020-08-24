@@ -4,6 +4,7 @@ defmodule VetPaperworkHelper.Category do
 
   schema "categories" do
     field :name, :string
+    field :is_subcategory, :boolean
 
     timestamps()
   end
