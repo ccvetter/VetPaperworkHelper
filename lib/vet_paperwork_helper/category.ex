@@ -29,7 +29,7 @@ defmodule VetPaperworkHelper.Categories do
   ## Examples
 
       iex> get_category!(123)
-      %Link{}
+      %Category{}
 
       iex> get_category!(456)
       ** (Ecto.NoResultsError)

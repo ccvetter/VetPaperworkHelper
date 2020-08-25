@@ -14,7 +14,7 @@ defmodule VetPaperworkHelper.Phrases do
   ## Examples
 
       iex> list_phrases()
-      [%Category{}, ...]
+      [%Phrase{}, ...]
 
   """
   def list_phrases do
@@ -29,7 +29,7 @@ defmodule VetPaperworkHelper.Phrases do
   ## Examples
 
       iex> get_phrase!(123)
-      %Link{}
+      %Phrase{}
 
       iex> get_phrase!(456)
       ** (Ecto.NoResultsError)

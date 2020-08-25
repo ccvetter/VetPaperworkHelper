@@ -19,10 +19,10 @@ config :vet_paperwork_helper,
 # Configures the endpoint
 config :vet_paperwork_helper, VetPaperworkHelperWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "add secret key",
+  secret_key_base: "add a secret",
   render_errors: [view: VetPaperworkHelperWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: VetPaperworkHelper.PubSub,
-  live_view: [signing_salt: "add salt"]
+  live_view: [signing_salt: "add a salt"]
 
 # Configures Elixir's Logger
 config :logger, :console,
