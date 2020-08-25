@@ -13,6 +13,15 @@ defmodule VetPaperworkHelperWeb.Router do
     plug :accepts, ["json"]
   end
 
+  scope "/" do
+    pipe_through :api
+
+    forward "/graphiql", Absinthe.Plug.GraphiQL,
+      schema: VetPaperworkHelper.Schema,
+      interface: :simple,
+      context: %{pubsub: VetPaperworkHelper.Endpoint}
+  end
+
   scope "/", VetPaperworkHelperWeb do
     pipe_through :browser
 

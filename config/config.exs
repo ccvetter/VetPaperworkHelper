@@ -9,8 +9,8 @@ use Mix.Config
 
 config :vet_paperwork_helper, VetPaperworkHelper.Repo,
   database: "vet_paperwork_helper_repo",
-  username: "add a username",
-  password: "add a password",
+  username: "postgres",
+  password: "postgres",
   hostname: "localhost"
 
 config :vet_paperwork_helper,
@@ -19,10 +19,10 @@ config :vet_paperwork_helper,
 # Configures the endpoint
 config :vet_paperwork_helper, VetPaperworkHelperWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "add a secret",
+  secret_key_base: "sTbeKdOYmNtTG+4W6IQeIQCmlSqEqDjqsPc80b+cG3PYTAaUSCccxaQ4bhUxWyjy",
   render_errors: [view: VetPaperworkHelperWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: VetPaperworkHelper.PubSub,
-  live_view: [signing_salt: "add a salt"]
+  live_view: [signing_salt: "jqIJhKAf"]
 
 # Configures Elixir's Logger
 config :logger, :console,
