@@ -35,5 +35,7 @@ npm-debug.log
 # this depending on your deployment strategy.
 /priv/static/
 
+/config/
+
 .vs
 .vscode
