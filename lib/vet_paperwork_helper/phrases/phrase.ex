@@ -1,13 +1,12 @@
-defmodule VetPaperworkHelper.Category do
+defmodule VetPaperworkHelper.Phrase do
   use Ecto.Schema
   import Ecto.Changeset
 
-  schema "categories" do
+  schema "phrases" do
     field :name, :string
-    field :is_subcategory, :boolean
+    field :phrase, :string
     field :category_id, :integer
     field :user_id, :integer
-
     timestamps()
   end
 

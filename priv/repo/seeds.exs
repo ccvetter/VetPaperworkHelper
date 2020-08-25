@@ -14,5 +14,7 @@ alias VetPaperworkHelper.Phrase
 alias VetPaperworkHelper.Category
 alias VetPaperworkHelper.Repo
 
-%Category{name: "Test", is_subcategory: false} |> Repo.insert!
-%User{username: "Test", email: "test@test.com", password_hash: "098f6bcd4621d373cade4e832627b4f6", is_admin: false} |> Repo.insert!
+user = %User{username: "Test", email: "test@test.com", password_hash: "098f6bcd4621d373cade4e832627b4f6", is_admin: false} |> Repo.insert!
+category = %Category{name: "Allergies", is_subcategory: false, user_id: user.id} |> Repo.insert!
+plants = %Category{name: "Plants", is_subcategory: true, category_id: category.id, user_id: user.id} |> Repo.insert!
+%Phrase{name: "Peanuts", phrase: "This is for peanut allergies", category_id: plants.id, user_id: user.id} |> Repo.insert!

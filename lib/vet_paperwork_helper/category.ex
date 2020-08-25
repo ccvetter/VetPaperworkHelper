@@ -1,6 +1,6 @@
 defmodule VetPaperworkHelper.Categories do
   @moduledoc """
-  The News context.
+  The Category context.
   """
 
   import Ecto.Query, warn: false
